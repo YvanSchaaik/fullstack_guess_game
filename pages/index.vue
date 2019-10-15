@@ -1,9 +1,11 @@
 <template>
-  <div class="container">
+  <div class="main">
     <img class="banner" src="../assets/header_banner.png" alt="Banner of flags">
-    <GameContainer />
-    <GameContainer />
-    <GameContainer />
+    <div class="games_container">
+      <GameContainer class="game_container" />
+      <GameContainer class="game_container" />
+      <GameContainer class="game_container" />
+    </div>
   </div>
 </template>
 
@@ -21,7 +23,4 @@ export default {
   box-sizing: border-box;
 }
 
-img {
-
-}
 </style>
