@@ -1,6 +1,7 @@
 <template>
-  <div class="main">
-    <img class="banner" src="../assets/header_banner.png" alt="Banner of flags">
+  <div class="body">
+    <div class="banner">
+    </div>
     <div class="games_container">
       <GameContainer class="game_container" />
       <GameContainer class="game_container" />
@@ -19,8 +20,27 @@ export default {
 </script>
 
 <style>
-* {
-  box-sizing: border-box;
+.banner {
+  background: url("../assets/header_banner.png") no-repeat border-box;
+  /* background-position: left 15% top */
+  background-size: 90%;
+  width: 100vw;
+  height: 8vh;
+  padding: 1rem;
+  margin-right: 1rem;
 }
 
+.games_container {
+ background-color: white;
+ border: 1px solid black;
+ margin-top: 0.5rem;
+ width: 100%;
+}
+
+.game_container {
+  margin: 1rem;
+  padding: 0.8rem;
+  border: 1px solid lightgrey;
+  display: inline-block;
+}
 </style>

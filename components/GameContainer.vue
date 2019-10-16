@@ -1,10 +1,10 @@
 <template>
-    <div class="game-container">
+    <div class="game_form">
         <p>Enter a number between 0 and 100</p>
-        <form action="">
-            <input>
-            <button class="button" type="submit">Submit</button>
+        <form class="form" action="">
+            <input type="number" placeholder="Enter a number here">
         </form>
+            <button class="button" type="submit">Submit</button>
     </div>
 </template>
 
@@ -16,4 +16,25 @@ export default {
 
 <style scoped>
 
+.game_form {
+    text-align: center;
+    width: 90%;
+    height: 30vh;
+    background-color: lightyellow;
+}
+
+.game_form input {
+    width: 9rem;
+    height: 1.5rem;
+}
+
+.button{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 30%;
+    height: 2rem;
+    margin-top: 0.5rem;
+}
 </style>
