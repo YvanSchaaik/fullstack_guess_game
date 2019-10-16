@@ -18,7 +18,7 @@ export default {
 
 .game_form {
     text-align: center;
-    width: 90%;
+    width: 80%;
     height: 30vh;
     background-color: lightyellow;
 }

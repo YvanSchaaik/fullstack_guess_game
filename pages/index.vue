@@ -23,10 +23,10 @@ export default {
 .banner {
   background: url("../assets/header_banner.png") no-repeat border-box;
   /* background-position: left 15% top */
-  background-size: 90%;
+  background-size: 200%;
   width: 100vw;
   height: 8vh;
-  padding: 1rem;
+  padding: 2rem;
   margin-right: 1rem;
 }
 
