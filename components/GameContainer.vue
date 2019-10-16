@@ -18,9 +18,11 @@ export default {
 
 .game_form {
     text-align: center;
-    width: 80%;
-    height: 30vh;
-    background-color: lightyellow;
+    border: 1px solid lightgrey;
+    margin: 2px;
+    display: inline-block;
+    width: 30%;
+    height: 30%;
 }
 
 .game_form input {

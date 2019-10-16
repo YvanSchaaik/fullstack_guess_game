@@ -22,25 +22,25 @@ export default {
 <style>
 .banner {
   background: url("../assets/header_banner.png") no-repeat border-box;
-  /* background-position: left 15% top */
-  background-size: 200%;
+  background-position: left 15%;
+  background-size: 100%;
   width: 100vw;
   height: 8vh;
-  padding: 2rem;
-  margin-right: 1rem;
+  padding-bottom: 8.5rem;
+  margin: 1rem;
 }
-
+/* 
 .games_container {
  background-color: white;
  border: 1px solid black;
  margin-top: 0.5rem;
- width: 100%;
-}
+ width: 100vw;
+} */
 
-.game_container {
+/* .game_container {
   margin: 1rem;
   padding: 0.8rem;
   border: 1px solid lightgrey;
-  display: inline-block;
-}
+  display: inline-block; 
+} */
 </style>
