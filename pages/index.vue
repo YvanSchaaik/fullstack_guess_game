@@ -3,44 +3,58 @@
     <div class="banner">
     </div>
     <div class="games_container">
-      <GameContainer class="game_container" />
-      <GameContainer class="game_container" />
-      <GameContainer class="game_container" />
+      <GameContainer  player="Player 1" class="game_container" />
+      <GameContainer  player="Player 2" class="game_container" />
+      <GameContainer  player="Player 3" class="game_container" />
     </div>
   </div>
 </template>
 
 <script>
 import GameContainer from '../components/GameContainer'
+import axios from 'axios'
+
 export default {
+  name: "app",
   components: {
     GameContainer
-  }
+  }, 
+  //store the data
 }
 </script>
 
 <style>
-.banner {
-  background: url("../assets/header_banner.png") no-repeat border-box;
-  background-position: left 15%;
-  background-size: 100%;
-  width: 100vw;
-  height: 8vh;
-  padding-bottom: 8.5rem;
-  margin: 1rem;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* 
-.games_container {
- background-color: white;
- border: 1px solid black;
- margin-top: 0.5rem;
- width: 100vw;
-} */
 
-/* .game_container {
-  margin: 1rem;
-  padding: 0.8rem;
-  border: 1px solid lightgrey;
-  display: inline-block; 
-} */
+.body {
+  width: 100%;
+}
+
+.banner {
+  /* background: url("../assets/header_banner.png") no-repeat;
+  height: 25vh; */
+  background: url("../assets/header_banner.png") no-repeat;
+  height: 25vh;
+  width: 100vw;
+  background-size: 258%;
+}
+
+@media(min-width: 40rem) {
+  .banner {
+    background: url("../assets/header_banner.png") no-repeat;
+    height: 25vh;
+    width: 100%;
+    background-size: 100%;
+  }
+}
+
+.games_container {
+  display: inline-block;
+  width: 100%;
+  margin-left: 2rem;
+}
 </style>
