@@ -4,7 +4,7 @@
         <p>Enter a number between 0 and 100</p>
         <form  @submit="submitGuess" class="form">
             <input class="input" type="number" v-model="guess">
-            <input  @submit="submitGuess" class="btn" type="button" value="Submit">
+            <button class="btn" type="submit">Submit</button>
         </form>
     </div>
 </template>
@@ -22,7 +22,7 @@ export default {
     //Store the data
     data() {
         return {
-            guess: '',
+            guess: Number,
         }
     },
     methods: {
@@ -30,20 +30,18 @@ export default {
             e.preventDefault()
             axios.get('http://localhost:5000/guess')
                 .then(res => {
-                    console.log('res.data',res.data.guess)
-                    console.log('this is my guess!',this.guess)
                     if (this.guess < res.data.guess) {
                         return console.log(`${this.player} said ${this.guess}: Higher`)
                     } else if (this.guess > res.data.guess) {
                         return console.log(`${this.player} said ${this.guess}: Lower`)
                     } else {
+                        this.winningNumber = false
                         return console.log(`${this.player} said ${this.guess}: BINGO!`)
                     }
                 })
                 .catch(err => console.log(err))
         },
-        
-    },
+    }
 }
 </script>
 
@@ -55,6 +53,7 @@ export default {
     margin-top: 1rem;
     width: 100%;
     height: 30vh;
+    color: grey;
 }
 
 

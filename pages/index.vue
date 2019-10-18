@@ -3,9 +3,9 @@
     <div class="banner">
     </div>
     <div class="games_container">
-      <GameContainer  player="Player 1" class="game_container" />
-      <GameContainer  player="Player 2" class="game_container" />
-      <GameContainer  player="Player 3" class="game_container" />
+      <GameContainer  player="Player 1" />
+      <GameContainer  player="Player 2" />
+      <GameContainer  player="Player 3" />
     </div>
   </div>
 </template>
